@@ -1,0 +1,78 @@
+Question 1.
+======================================
+
+interface IShape{
+
+float area(float a);
+float perimeter(float a);
+
+}
+
+class Circle implements IShape{
+
+float area;
+float perimeter;
+
+public float area(float radius){
+
+  area = 3.14 * radius * radius.
+  return area;
+}
+
+public float perimeter(float radius){
+
+  perimeter = 2 * 3.14 * radius.
+  return perimeter;
+}
+
+}
+
+class Square implements IShape{
+
+float area;
+float perimeter;
+
+public float area(float side){
+
+  area = side * side.
+  return area;
+}
+
+public float perimeter(float side){
+
+  perimeter = 4 * side.
+  return perimeter;
+}
+
+}
+
+====================================================
+
+Question 2.
+
+==========================
+
+class Parent{
+
+public Parent(){
+ System.out.println("This is parent class");
+}
+
+}
+
+class Child extends Parent{
+
+public Child(){
+ System.out.println("This is child class");
+}
+
+}
+
+class Main{
+
+ public static void main(String args[]){
+
+  Child objc = new Parent();
+  System.out.println(objc);
+}
+}
